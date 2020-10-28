@@ -15,7 +15,7 @@ class User(admin.ModelAdmin):
 
 
 @admin.register(models.GhostName)
-class User(admin.ModelAdmin):
+class GhostName(admin.ModelAdmin):
     list_display = (
         'name',
         'description',
