@@ -19,3 +19,11 @@ def index(request):
     )
 
     return response
+
+
+
+def logout(request):
+    auth.logout(request=request)
+    response = shortcuts.redirect(to='index')
+
+    return response
