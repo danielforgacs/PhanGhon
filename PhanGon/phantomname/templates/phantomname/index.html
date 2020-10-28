@@ -3,4 +3,12 @@
 {% block body %}
 	<h3>index...</h3>
 	check...<br>
+
+	<form>
+		{% csrf_token %}
+		{{ userform.as_p }}
+		<p>
+			<input type="submit" name="" value="sign in">
+		</p>
+	</form>
 {% endblock %}
