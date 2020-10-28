@@ -1,7 +1,7 @@
 clean:
 	@git clean -xdf -e .venv
 
-migrate: clean
+migrate:
 	@cd PhanGon && \
 		python manage.py migrate
 
