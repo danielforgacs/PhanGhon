@@ -23,6 +23,35 @@ def index(request):
 
 
 
+def register(request):
+    template = 'phantomname/register.html'
+    userform = forms.UserForm(request.POST or None)
+    context = {
+        'userform': userform,
+    }
+
+    if userform.is_valid():
+        username = userform.data.get('username')
+        password = userform.data.get('password')
+        user = models.User.objects.create_user(
+            username=username,
+            password=password,
+        )
+        auth.login(request, user)
+        response = shortcuts.redirect(to=index)
+
+    else:
+        response = shortcuts.render(
+            request=request,
+            template_name=template,
+            context=context,
+        )
+
+    return response
+
+
+
+
 def login(request):
     template = 'phantomname/login.html'
     response = shortcuts.render(
