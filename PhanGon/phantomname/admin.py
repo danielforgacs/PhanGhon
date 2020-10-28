@@ -10,3 +10,13 @@ class User(admin.ModelAdmin):
         'is_staff',
         'is_superuser',
     )
+
+
+
+
+@admin.register(models.GhostName)
+class User(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'description',
+    )
