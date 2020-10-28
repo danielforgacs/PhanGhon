@@ -1,5 +1,6 @@
 # files:
 *.py[co]
+db.sqlite3
 
 # directories:
 .venv/
