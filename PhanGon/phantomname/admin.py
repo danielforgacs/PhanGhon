@@ -20,3 +20,13 @@ class GhostName(admin.ModelAdmin):
         'name',
         'description',
     )
+
+
+
+
+@admin.register(models.PhantomName)
+class PhantomName(admin.ModelAdmin):
+    list_display = (
+        'user',
+        'ghostname',
+    )
