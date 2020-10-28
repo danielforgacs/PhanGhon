@@ -4,7 +4,13 @@
 <div>
 {% for ghostname in ghostnames %}
 	<div>
+		{% if ghostname.phantomname %}
+			{{ ghostname.phantomname.user.first_name }}
+		{% endif %}
 		{{ ghostname }}
+		{% if ghostname.phantomname %}
+			{{ ghostname.phantomname.user.last_name }}
+		{% endif %}
 	</div>
 {% endfor %}
 </div>
