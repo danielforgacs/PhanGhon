@@ -9,8 +9,10 @@ from . import models
 def index(request):
     template = 'phantomname/index.html'
     userform = forms.UserForm()
+    ghostnames = models.GhostName.objects.all()
     context = {
         'userform': userform,
+        'ghostnames': ghostnames,
     }
     response = shortcuts.render(
         request=request,
