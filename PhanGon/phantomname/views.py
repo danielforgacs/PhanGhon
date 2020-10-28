@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django import shortcuts
+from django.contrib import auth
 from . import forms
+from . import models
 
 
 
@@ -10,7 +12,7 @@ def index(request):
     context = {
         'userform': userform,
     }
-    response = render(
+    response = shortcuts.render(
         request=request,
         template_name=template,
         context=context,
