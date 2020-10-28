@@ -24,3 +24,6 @@ pylint:
 		! -name '__init__.py' \
 		! -path '**/migrations/**' \
 		| xargs pylint
+
+test:
+	@pytest PhanGon
