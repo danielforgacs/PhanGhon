@@ -1,3 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+
+
+def index(request):
+    template = 'phantomname/index.html'
+    context = {}
+    response = render(
+        request=request,
+        template_name=template,
+        context=context,
+    )
+
+    return response
