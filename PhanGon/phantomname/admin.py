@@ -7,6 +7,8 @@ from . import models
 class User(admin.ModelAdmin):
     list_display = (
         'username',
+        'first_name',
+        'last_name',
         'is_staff',
         'is_superuser',
     )
