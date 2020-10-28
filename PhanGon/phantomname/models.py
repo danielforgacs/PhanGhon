@@ -13,6 +13,17 @@ class GhostName(models.Model):
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=500)
 
+    @property
+    def phantomname(self):
+        result = None
+        query = PhantomName.objects.get(ghostname=self)
+
+        if query:
+            result = query
+
+        return result
+
+
 
 
 
