@@ -1,3 +1,4 @@
+import random
 import logging
 from django import shortcuts
 from django.conf import settings
@@ -122,8 +123,34 @@ def get_name(request):
 
 @decorators.login_required(login_url='login')
 def choose_name(request):
+    # print('ajsdfh')
+    available = models.GhostName.objects.query_free_names()
+    choicecount = min(available.count(), 3)
+    choices = []
+    # print(choicecount)
+
+    for _ in range(choicecount):
+        # This part makes sure no 3 choices have
+        # duplicate ghost names selected.
+        candidate = random.choice(available)
+        looplimit = 100
+        counter = 0
+
+        while candidate in choices:
+            counter += 1
+            # print(counter)
+
+            if counter == looplimit:
+                break
+
+            candidate = random.choice(available)
+
+        choices.append(candidate)
+
     template = 'phantomname/choose_name.html'
-    context = {}
+    context = {
+        'choices': choices,
+    }
     response = shortcuts.render(
         request=request,
         template_name=template,
