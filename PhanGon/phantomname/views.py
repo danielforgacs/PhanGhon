@@ -94,12 +94,20 @@ def logout(request):
 
 
 def get_name(request):
-    template = 'phantomname/get_name.html'
-    context = {}
-    response = shortcuts.render(
-        request=request,
-        template_name=template,
-        context=context,
-    )
+    if request.method == 'POST':
+        firstname = request.POST.get('firstname')
+        lastname = request.POST.get('lastname')
+        user = request.user
+        user.first_name = firstname
+        user.last_name = lastname
+        user.save()
+        response = shortcuts.redirect(to='index')
+
+    else:
+        template = 'phantomname/get_name.html'
+        response = shortcuts.render(
+            request=request,
+            template_name=template,
+        )
 
     return response
