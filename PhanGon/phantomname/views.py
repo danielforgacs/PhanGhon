@@ -113,3 +113,18 @@ def get_name(request):
         )
 
     return response
+
+
+
+
+@decorators.login_required(login_url='login')
+def choose_name(request):
+    template = 'phantomname/choose_name.html'
+    context = {}
+    response = shortcuts.render(
+        request=request,
+        template_name=template,
+        context=context,
+    )
+
+    return response
