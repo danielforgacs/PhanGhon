@@ -14,7 +14,6 @@ dumpdb:
 		-o phantomname/fixtures/phantomname.json
 
 loaddata:
-	- @rm PhanGon/db.sqlite3
 	@python PhanGon/manage.py migrate
 	@python PhanGon/manage.py loaddata phantomname
 
