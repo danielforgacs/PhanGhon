@@ -20,8 +20,14 @@ $ make migrate
 $ make loaddata
 ```
 
-## ToDo:
-
-
 ## Notes:
-- remove hardcoded `SECRET_KEY` default env var in settings/
+- I always remove the SECRET_KEY and DEBUG vars and move  
+them into env vars. I left SECRET_KEY hardcoded for this  
+test task. Safe sites is not updated, set the DEBUG  
+env var to something non empty.
+- I checked out the __4-hours-mark__ branch to mark  
+when 4 hours has passed since I started working  
+on this project.
+
+
+## ToDo:
