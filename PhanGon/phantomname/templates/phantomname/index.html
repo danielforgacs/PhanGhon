@@ -13,5 +13,12 @@
 		{% endif %}
 	</div>
 {% endfor %}
+{% if user.is_authenticated %}
+	{% if user.has_phantomname %}
+		<div>HAS name</div>
+	{% else %}
+		<div>NO name</div>
+	{% endif %}
+{% endif %}
 </div>
 {% endblock %}
