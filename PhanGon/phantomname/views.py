@@ -65,7 +65,6 @@ def register(request):
 
 def login(request):
     template = 'phantomname/login.html'
-    context = {}
     response = shortcuts.render(
         request=request,
         template_name=template,
