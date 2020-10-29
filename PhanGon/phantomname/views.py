@@ -158,3 +158,13 @@ def choose_name(request):
     )
 
     return response
+
+
+
+
+def save_choice(request):
+    ghostnameid = request.GET.get('choice')
+    print(ghostnameid)
+    response = shortcuts.redirect(to='index')
+
+    return response
