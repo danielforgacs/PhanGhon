@@ -5,8 +5,11 @@ from phantomname import views
 from phantomname import models
 
 
+TEST_USER_COUNT = 4
+TEST_USER_NAME_TEMPLATE = '__TEST_USER__'
 TEST_GHOST_NAME_COUNT = 5
 TEST_GHOST_NAME_TEMPLATE = 'POKL'
+TEST_PASSWORD = 'PWD'
 
 
 
@@ -28,6 +31,16 @@ def ghostnames():
         models.GhostName.objects.create(name=name)
 
 
+
+
+@pytest.fixture
+def users():
+    for row in range(TEST_USER_COUNT):
+        idx = '{:04d}'.format(row)
+        name = TEST_USER_NAME_TEMPLATE + idx
+        user = models.User.objects.create_user(username=name, password=TEST_PASSWORD)
+        user.set_password(TEST_PASSWORD)
+        user.save()
 
 
 @pytest.mark.django_db
@@ -58,3 +71,17 @@ def test_can_register_user(client):
     pattern = r'<h3>logged in as: <strong>.*</strong></h3>'
     found = re.findall(pattern, html)
     assert len(found) == 1
+
+
+
+
+@pytest.mark.django_db
+def test_user_can_log_in(users, ghostnames, client):
+    username = TEST_USER_NAME_TEMPLATE+'0000'
+    client.login(username=username, password=TEST_PASSWORD)
+    url = urls.reverse('index')
+    response = client.get(url)
+    html = response.content.decode()
+    found = re.findall(username, html)
+    assert len(found) == 1
+
