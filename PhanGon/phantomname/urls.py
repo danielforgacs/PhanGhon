@@ -9,4 +9,5 @@ urlpatterns = [
     urls.path(route='login', view=views.login, name='login'),
     urls.path(route='logout', view=views.logout, name='logout'),
     urls.path(route='get_name', view=views.get_name, name='get_name'),
+    urls.path(route='choose_name', view=views.choose_name, name='choose_name'),
 ]
