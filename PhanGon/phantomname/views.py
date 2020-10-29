@@ -44,12 +44,22 @@ def register(request):
     if userform.is_valid():
         username = userform.data.get('username')
         password = userform.data.get('password')
-        user = models.User.objects.create_user(
-            username=username,
-            password=password,
-        )
-        auth.login(request, user)
-        response = shortcuts.redirect(to=index)
+        password2 = userform.data.get('confirm_password')
+
+        if password == password2:
+            user = models.User.objects.create_user(
+                username=username,
+                password=password,
+            )
+            auth.login(request, user)
+            response = shortcuts.redirect(to=index)
+        else:
+            context['error'] = 'Passwords don`t match'
+            response = shortcuts.render(
+                request=request,
+                template_name=template,
+                context=context,
+            )
 
     else:
         response = shortcuts.render(
