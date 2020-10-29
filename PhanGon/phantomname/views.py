@@ -89,3 +89,17 @@ def logout(request):
     response = shortcuts.redirect(to='index')
 
     return response
+
+
+
+
+def get_name(request):
+    template = 'phantomname/get_name.html'
+    context = {}
+    response = shortcuts.render(
+        request=request,
+        template_name=template,
+        context=context,
+    )
+
+    return response
