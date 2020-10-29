@@ -12,7 +12,33 @@ class User(auth.models.AbstractUser):
 
 
 
+
+class GhostNameQS(models.QuerySet):
+    def query_free_names(self, usedids):
+        query = self.exclude(id__in=usedids)
+
+        return query
+
+
+
+class GhostNameManager(models.Manager):
+    def get_queryset(self):
+        queryset = GhostNameQS(self.model, using=self._db)
+        return queryset
+
+
+    def query_free_names(self):
+        phantomnames = PhantomName.objects.values('ghostname')
+        used_ids = [phantomnames['ghostname'] for phantomnames in phantomnames]
+        freenames = self.get_queryset().query_free_names(usedids=used_ids)
+
+        return freenames
+
+
+
+
 class GhostName(models.Model):
+    objects = GhostNameManager()
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=500)
 
