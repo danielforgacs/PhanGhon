@@ -9,7 +9,11 @@
 		</div>
 	{% else %}
 		<div>
-			<a href="">Get a Phantom Name</a>
+			{% if request.user.firstname %}
+				<a href="">Get a Phantom Name</a>
+			{% else %}
+				<a href="{% url 'get_name' %}">Get a Phantom Name</a>
+			{% endif %}
 		</div>
 	{% endif %}
 {% endif %}
