@@ -63,3 +63,10 @@ class GhostName(models.Model):
 class PhantomName(models.Model):
     user = models.ForeignKey(to='User', on_delete=models.CASCADE)
     ghostname = models.ForeignKey(to='GhostName', on_delete=models.CASCADE)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=('user', 'ghostname'),
+                name='unique_phantomname',),
+        ]
