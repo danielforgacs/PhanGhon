@@ -7,6 +7,8 @@ from . import models
 class User(admin.ModelAdmin):
     list_display = (
         'username',
+        'first_name',
+        'last_name',
         'is_staff',
         'is_superuser',
     )
@@ -15,8 +17,18 @@ class User(admin.ModelAdmin):
 
 
 @admin.register(models.GhostName)
-class User(admin.ModelAdmin):
+class GhostName(admin.ModelAdmin):
     list_display = (
         'name',
         'description',
+    )
+
+
+
+
+@admin.register(models.PhantomName)
+class PhantomName(admin.ModelAdmin):
+    list_display = (
+        'user',
+        'ghostname',
     )

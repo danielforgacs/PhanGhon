@@ -31,6 +31,35 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'REMOVE THIS SECRET_KEY! js&98734')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
+LOG_CONFIG = {
+    'version': 1,
+    'formatters': {
+        'detailed': {
+            'class': 'logging.Formatter',
+            'format': (
+                '%(created)f'
+                ' ;%(asctime)-20s'
+                ' ;%(levelname)-9s'
+                ' ;%(name)-20s'
+                ' ;%(funcName)-15.18s'
+                ' ;%(lineno)04d'
+                ' ;%(message)s'
+            ),
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'detailed',
+        },
+    },
+    'root': {
+        'level': 'DEBUG',
+        'handlers': ['console'],
+    }
+}
+
+
 ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'phantomname.User'

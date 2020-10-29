@@ -4,10 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.1.2"
-pylint = "==2.6.0"
+Django = "==3.1.2"
 
 [dev-packages]
+pylint = "==2.6.0"
+pytest = "==6.1.2"
+pytest-django = "==4.0.0"
+
 
 [requires]
 python_version = "3.8"
