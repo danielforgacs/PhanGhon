@@ -164,7 +164,22 @@ def choose_name(request):
 
 def save_choice(request):
     ghostnameid = request.GET.get('choice')
-    print(ghostnameid)
+    ghostname = models.GhostName.objects.get(id=ghostnameid)
+    query_phantomname = models.PhantomName.objects.filter(
+        user=request.user,
+    )
+
+    if query_phantomname:
+        phantomname = query_phantomname[0]
+        phantomname.ghostname = ghostname
+        phantomname.save()
+
+    else:
+        phantomname = models.PhantomName.objects.create(
+            user=request.user,
+            ghostname=ghostname,
+        )
+
     response = shortcuts.redirect(to='index')
 
     return response
