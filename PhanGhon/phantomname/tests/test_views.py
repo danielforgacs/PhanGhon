@@ -38,3 +38,23 @@ def test_index_lists_ghostnames(client, data01):
     pattern = TEST_GHOST_NAME_TEMPLATE+r'\d{4}'
     found = re.findall(pattern, html)
     assert len(found) == TEST_GHOST_NAME_COUNT
+
+
+
+
+@pytest.mark.django_db
+def test_can_register_user(client):
+    url = urls.reverse('register')
+    response = client.post(
+        url,
+        follow=True,
+        data={
+            'username': 'username',
+            'password': 'password',
+            'confirm_password': 'password',
+        }
+    )
+    html = response.content.decode()
+    pattern = r'<h3>logged in as: <strong>.*</strong></h3>'
+    found = re.findall(pattern, html)
+    assert len(found) == 1
