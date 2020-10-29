@@ -1,7 +1,8 @@
 import logging
 from django import shortcuts
-from django.contrib import auth
 from django.conf import settings
+from django.contrib import auth
+from django.contrib.auth import decorators
 from . import forms
 from . import models
 
@@ -61,6 +62,7 @@ def register(request):
 
 def login(request):
     template = 'phantomname/login.html'
+    context = {}
     response = shortcuts.render(
         request=request,
         template_name=template,
@@ -95,6 +97,7 @@ def logout(request):
 
 
 
+@decorators.login_required(login_url='login')
 def get_name(request):
     if request.method == 'POST':
         firstname = request.POST.get('firstname')
@@ -103,7 +106,7 @@ def get_name(request):
         user.first_name = firstname
         user.last_name = lastname
         user.save()
-        response = shortcuts.redirect(to='index')
+        response = shortcuts.redirect(to='choose_name')
 
     else:
         template = 'phantomname/get_name.html'
