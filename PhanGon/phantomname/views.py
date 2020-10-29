@@ -1,8 +1,13 @@
+import logging
 from django import shortcuts
 from django.contrib import auth
+from django.conf import settings
 from . import forms
 from . import models
 
+
+logging.config.dictConfig(settings.LOG_CONFIG)
+logger = logging.getLogger(__name__)
 
 
 
