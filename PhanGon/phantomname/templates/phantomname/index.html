@@ -4,7 +4,9 @@
 <div>
 {% if user.is_authenticated %}
 	{% if user.has_phantomname %}
-		<div>HAS name</div>
+		<div>
+			<a href="">Change Your Phantom Name</a>
+		</div>
 	{% else %}
 		<div>
 			<a href="">Get a Phantom Name</a>
