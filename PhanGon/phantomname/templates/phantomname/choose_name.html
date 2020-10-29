@@ -1,5 +1,11 @@
 {% extends 'phantomname/layout.html' %}
 
 {% block body %}
-	hey, chooose...
+	{% for ghostname in choices %}
+		<p>
+			<a href="{% url 'save_choice' %}?choice={{ ghostname.id }}">
+				{{ request.user.first_name}} {{ ghostname.name }} {{ request.user.last_name}}
+			</a>
+		</p>
+	{% endfor %}
 {% endblock %}
