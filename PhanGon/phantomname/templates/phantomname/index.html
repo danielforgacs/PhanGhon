@@ -5,7 +5,7 @@
 {% if user.is_authenticated %}
 	{% if user.has_phantomname %}
 		<div>
-			<a href="">Change Your Phantom Name</a>
+			<a href="{% url 'choose_name' %}">Choose a New Phantom Name (named)</a>
 		</div>
 	{% else %}
 		<div>
