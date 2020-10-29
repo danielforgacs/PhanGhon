@@ -85,3 +85,23 @@ def test_user_can_log_in(users, ghostnames, client):
     found = re.findall(username, html)
     assert len(found) == 1
 
+
+
+
+@pytest.mark.django_db
+def test_new_user_can_choose_phantom_name(users, ghostnames, client):
+    username = TEST_USER_NAME_TEMPLATE+'0000'
+    client.login(username=username, password=TEST_PASSWORD)
+    url = urls.reverse('get_name')
+    response = client.post(
+        url,
+        follow=True,
+        data={
+            'firstname': '..::firstname::..',
+            'lastname': '..::lastname::..',
+        }
+    )
+    html = response.content.decode()
+    pattern = r'..::firstname::.. .*\d{4} ..::lastname::..'
+    found = re.findall(pattern, html)
+    assert len(found) == 4
