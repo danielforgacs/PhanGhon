@@ -4,8 +4,11 @@ from django.contrib import auth
 
 
 class User(auth.models.AbstractUser):
-    pass
+    def has_phantomname(self):
+        query = PhantomName.objects.filter(user=self)
+        result = query.count() == 1
 
+        return result
 
 
 
