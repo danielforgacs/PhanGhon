@@ -21,7 +21,7 @@ def test_index(client):
 
 
 @pytest.fixture
-def data01():
+def ghostnames():
     for row in range(TEST_GHOST_NAME_COUNT):
         idx = '{:04d}'.format(row)
         name = TEST_GHOST_NAME_TEMPLATE + idx
@@ -31,7 +31,7 @@ def data01():
 
 
 @pytest.mark.django_db
-def test_index_lists_ghostnames(client, data01):
+def test_index_lists_ghostnames(client, ghostnames):
     url = urls.reverse('index')
     response = client.get(url)
     html = response.content.decode()
