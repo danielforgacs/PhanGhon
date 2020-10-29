@@ -77,6 +77,8 @@ def login(request):
         if user:
             auth.login(request, user)
             response = shortcuts.redirect(to='index')
+        else:
+            response = shortcuts.redirect(to='register')
 
     return response
 
