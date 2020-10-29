@@ -45,10 +45,10 @@ class GhostName(models.Model):
     @property
     def phantomname(self):
         result = None
-        query = PhantomName.objects.get(ghostname=self)
+        query = PhantomName.objects.filter(ghostname=self)
 
         if query:
-            result = query
+            result = query[0]
 
         return result
 
