@@ -1,19 +1,5 @@
 [
 {
-    "model": "phantomname.user",
-    "pk": 2,
-    "fields": {
-        "username": "user_01",
-        "password": "pbkdf2_sha256$216000$1tHakRHYDfyx$7BEYeaoHkuEVmqvxZugjM6/MPET0zyhiSiK15VVpgEc=",
-        "is_superuser": false,
-        "is_staff": false,
-        "is_active": true
-    }
-},
-
-
-
-{
     "model": "phantomname.ghostname",
     "pk": 1,
     "fields": {
