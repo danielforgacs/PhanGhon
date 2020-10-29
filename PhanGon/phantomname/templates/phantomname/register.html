@@ -3,11 +3,16 @@
 {% block body %}
 	<h3>Register</h3>
 
-	<form action="" method="POST">
-		{% csrf_token %}
-		{{ userform.as_p }}
-		<p>
-			<input type="submit" name="" value="sign in">
-		</p>
-	</form>
+	{% if is_open %}
+		<form action="" method="POST">
+			{% csrf_token %}
+			{{ userform.as_p }}
+			<p>
+				<input type="submit" name="" value="sign in">
+			</p>
+		</form>
+	{% else %}
+		<h2>registration is closed...</h2>
+		<p>come back before next Halloween...</p>
+	{% endif %}
 {% endblock %}

@@ -33,10 +33,12 @@ def index(request):
 
 
 def register(request):
+    is_open = models.User.objects.count() <= models.GhostName.objects.count()
     template = 'phantomname/register.html'
     userform = forms.UserForm(request.POST or None)
     context = {
         'userform': userform,
+        'is_open': is_open,
     }
 
     if userform.is_valid():
