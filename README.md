@@ -33,5 +33,15 @@ the .env file and set this.)
 when 4 hours has passed since I started working  
 on this project.
 
+- the __approx-10-hours-mark__ branch marks approximatelly  
+10 hours of work. At that point the product works,
+needs testing.
+
 
 ## ToDo:
+
+- sphinx docs
+- more testing
+- OAuth with google
+- docker & compose setup
+- deployment
