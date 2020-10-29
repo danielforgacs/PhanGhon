@@ -19,3 +19,9 @@ $ make migrate
 # load fixtues: ghostname table, a few users
 $ make loaddata
 ```
+
+## ToDo:
+
+
+## Notes:
+- remove hardcoded `SECRET_KEY` default env var in settings/
