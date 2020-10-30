@@ -1,0 +1,30 @@
+{% extends 'phantomname/layout.html' %}
+
+{% block body %}
+<div>
+{% if user.is_authenticated %}
+	{% if user.has_phantomname %}
+		<div>
+			<a href="{% url 'choose_name' %}">Choose a New Phantom Name (named)</a>
+		</div>
+	{% else %}
+		<div>
+			{% if request.user.first_name %}
+				<a href="{% url 'choose_name' %}">Choose a Phantom Name (named)</a>
+			{% else %}
+				<a href="{% url 'get_name' %}">Choose a Phantom Name</a>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endif %}
+{% for ghostname in ghostnames %}
+	<div>
+		{% if ghostname.phantomname %}
+			<strong>{{ ghostname.phantomname.user.first_name }} {{ ghostname.name }} {{ ghostname.phantomname.user.last_name }}</strong>
+		{% else %}
+			{{ ghostname.name }}
+		{% endif %}
+	</div>
+{% endfor %}
+</div>
+{% endblock %}

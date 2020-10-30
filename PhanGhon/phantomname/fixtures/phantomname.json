@@ -1,0 +1,346 @@
+[
+{
+    "model": "phantomname.ghostname",
+    "pk": 1,
+    "fields": {
+        "name": "Betelgeuse",
+        "description": "(Beetlejuice): The Ghost with the Most."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 2,
+    "fields": {
+        "name": "Bhoot",
+        "description": "(Indian folklore): The restless ghost of a deceased person, usually appearing in human form but with backward-facing feet. Bhoots tend to appear in white, often floating above the ground or in trees, and cast no shadow."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 3,
+    "fields": {
+        "name": "Bloody Mary",
+        "description": "(American folklore): Other urban legends may come and go, but proud Mary keeps on burning. As long as there are sleepover parties, there will be someone bold enough to say her name three times in front of a mirror at midnight. We should totally hook her up with Betelgeuse. Or the Candyman."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 4,
+    "fields": {
+        "name": "Bogle",
+        "description": "(Scottish/English folklore): Goblin-esque ghostly beings who delight in messing with humans, usually to annoy, perplex, or simply frighten (rather than inflicting serious harm). For example, \u201cTatty Bogle\u201d would hide in potato fields and cause blight, when not attacking unsuspecting humans. Hilarious!"
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 5,
+    "fields": {
+        "name": "Casper",
+        "description": "(Cartoons/comics): Starting out in (some oddly dark) animated cartoons in the mid-40s, Casper has been through various incarnations in serial cartoons, comic books, and TV, with a live-action film in 1995. Casper\u2019s backstory has changed a bit over the years, but regardless of how he became a ghost, it seems clear that he probably isn\u2019t out to get us. Unless he\u2019s just been lulling us all into a false sense of security for the six decades."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 6,
+    "fields": {
+        "name": "Chindi",
+        "description": "(Navajo folklore): The ghost that leaves the body with a person\u2019s last breath, containing everything that was bad or unharmonious in their spirit. After death, the dead person\u2019s name is never spoken and their remains and possessions are avoided in order to avoid chindi-inflicted \u201cghost sickness.\u201d"
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 7,
+    "fields": {
+        "name": "Cihuateteo",
+        "description": "(Aztec mythology): The ancient Aztecs regarded childbirth as a form of battle, so women who died giving birth were honored as fallen warriors. In death, they became the fearsome Cihuateteo, known for haunting crossroads, causing sickness and madness, and stealing children. Do not get on their bad side."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 8,
+    "fields": {
+        "name": "Clytemnestra",
+        "description": "(Greek myth/drama): One of the first ghosts to appear in a work of fiction, Aeschylus\u2019s Oresteia (458 BC) portrays her as a scheming femme fatale who murders her husband and is in turn killed by her son, Orestes. Her vengeful spirit appears to spur The Furies to action, urging them to torment and punish Orestes. Even in death, she\u2019s not a woman to be trifled with..."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 9,
+    "fields": {
+        "name": "Draugr",
+        "description": "(Norse mythology): Undead Vikings who possess superhuman strength, the ability to swell and increase their size or shapeshift at will, and reek of decay. They delight in violently slaughtering and sometimes consuming their victims, usually people who have trespassed on the graves or burial mounds the draugr guards, although sometimes they roam and rampage, killing animals and humans alike."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 10,
+    "fields": {
+        "name": "Dybbuk",
+        "description": "(Jewish Folklore): Malevolent spirit believed to be the soul of a dead person, able to possess the living. Contrast with Ibbur."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 11,
+    "fields": {
+        "name": "Gjenganger",
+        "description": "(Scandinavian folklore): The ghost of a dead person (often murderers, murder victims, or suicides) who, though undead, took on corporeal form and threatened the living with violence or torment. They could also administer the d\u00f8dningeknip (or \u201cdead man\u2019s pinch), which would cause disease and death to befall the victim."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 12,
+    "fields": {
+        "name": "Gu\u012d",
+        "description": "(Chinese folklore): The general Chinese term for ghosts, there are many different types and categorizations of Gu\u012d; Yu\u0101n Gu\u01d0, for example, is the term for a ghost who has died a wrongful death, W\u00fa T\u00f3u Gu\u01d0 is a wandering headless specter, and Shu\u01d0 Gu\u01d0 are ghosts of the drowned, who attack the living and drag them under water, hoping to drown their victims and take possession of their body. The spirits of the dead are celebrated in Chinese culture are celebrated in an annual ghost festival, when the realms of the living and the realms of Heaven and Hell are open, allowing the dead to interact with the living, and particularly their family and descendants."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 13,
+    "fields": {
+        "name": "Ibbur",
+        "description": "(Jewish Folklore): Unlike the dybbuk, a positive form of possession in which a benevolent soul temporarily inhabits a living person in a beneficial and positive way."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 14,
+    "fields": {
+        "name": "Jima",
+        "description": "(Amazonian folklore): Feared by the Wari, an Amazonian rainforest tribe, Jima are terrifying specters known for grabbing their living victims with their incredibly strong, cold, poisonous hands and attempting to tear the victim\u2019s spirit away."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 15,
+    "fields": {
+        "name": "Jinn",
+        "description": "(Quran/Islamic mythology): Jinn (also known as djinn or genies), are described in the Quran as spirits made of smokeless, scorching fire, and can be evil, good, or neutral in their interactions with humans."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 16,
+    "fields": {
+        "name": "La Llorona",
+        "description": "(Spanish/Mexican legend): The Weeping Woman, a spirit who drowned her children in order to be with her lover, but was rejected and committed suicide. Constantly crying, La Llorona is doomed to eternally search for her children in vain, sometimes attempting to steal living children who wander or misbehave."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 17,
+    "fields": {
+        "name": "Moaning Myrtle",
+        "description": "(Harry Potter): Muggle-born witch, killed by a Basilisk when she caught Tom Riddle opening the Chamber of Secrets. Her ghost haunts the Hogwarts bathroom in which she died (occasionally branching out to other bathrooms in the castle). Myrtle sometimes helps Harry, when she\u2019s not crying or desperately flirting with him."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 18,
+    "fields": {
+        "name": "Mr. Boogedy",
+        "description": "(Mr. Boogedy): The star of a surprisingly unsettling late-80s Disney movie, Mr. Boogedy is the ghost of cranky pilgrim who sold his soul to Satan for a magic cloak, and ends up haunting David Faustino and Kristy Swanson, for some reason."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 19,
+    "fields": {
+        "name": "Nachzehrer",
+        "description": "(German folklore): Supernatural being similar to a vampire, often tied to suicide or accidental death. The nachzehrer awakes after death and often attempts to devour its living family members, but sometimes consumes its own flesh in the grave. Powers include causing death by casting a shadow on the living, or by ringing church bells, killing everyone within hearing."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 20,
+    "fields": {
+        "name": "Blinky",
+        "description": "(Video game): Pac-Man\u2019s nemeses, each ghost has a nickname and is associated with a particular character trait within the game. \u201cBlinky\u201d (red) shadows Pac-Man, chasing him; \u201cPinky\u201d (pink) is speedy; \u201cInky\u201d (blue) is bashful, and \u201cClyde\u201d (orange) is pokey, slower and more random in his movements. This developed out of the original Japanese version, Puck-Man, in which the ghosts\u2019 personalities can be translated as Chaser, Ambusher, Fickle, and Stupid, respectively."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 21,
+    "fields": {
+        "name": "Pinky",
+        "description": ""
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 22,
+    "fields": {
+        "name": "Inky",
+        "description": ""
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 23,
+    "fields": {
+        "name": "Clyde",
+        "description": ""
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 24,
+    "fields": {
+        "name": "Patrick Swayze",
+        "description": "(Ghost): The sexiest ghost of all. Good with clay and Whoopi Goldberg."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 25,
+    "fields": {
+        "name": "Phi Tai Hong",
+        "description": "(Thai folkore): The most feared type of ghost in all of Thai folklore, a restless and angry spirit of a person who suffered a violent death."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 26,
+    "fields": {
+        "name": "Pishacha",
+        "description": "(Hindu mythology): Demonic ghosts that feed on flesh and human energies, capable of possessing humans and altering their thoughts, sometimes leading to madness. Like bhuts, pishacha are often depicted as haunting cremation grounds."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 27,
+    "fields": {
+        "name": "Poltergeist",
+        "description": "(Various folklores): While the common term for this comes from the German words for \u201cnoisy ghost,\u201d poltergeists feature in the folklore of many cultures. The term usually denotes a disruptive entity that haunts a particular person via strange noises and even petty physical attacks. Poltergeist activity is a popular subject in TV in movies, featuring in everything from Blithe Spirit to Harry Potter to the Poltergeist movies."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 28,
+    "fields": {
+        "name": "Revenant",
+        "description": "(European folklore): General term for an undead corpse or visible ghost that returns from the grave, usually for malevolent purposes. Stories involving revenants usually depict a specific undead person who returns with a purpose, such as revenge against a killer or those responsible for their death, or to harass people who wronged them during life."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 29,
+    "fields": {
+        "name": "Ringwraith",
+        "description": "(Lord of the Rings): Not technically ghosts, perhaps, but certainly spooky enough to make the list, the Ringwraiths (also known as Nazg\u00fbl or Black Riders) began as nine mortal men to whom Sauron gave Rings of Power. The rings gave them power and extended their lives, but it also corrupted and destroyed them, turning them into undead thralls even after their corporeal form faded away."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 30,
+    "fields": {
+        "name": "Slender Man",
+        "description": "(Internet myth): No one knows what the Slender Man is; his defining characteristic is mystery, with the ability to inspire fear a close second. An urban legend for the 21st century, the Slender Man stalks his victims, sometimes over long periods of time, and may inspire amnesia, paranoia, and madness; he is allegedly responsible for various unexplained disappearances. All we really know is, the Slender Man is terrifying."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 31,
+    "fields": {
+        "name": "Slimer",
+        "description": "(Ghostbusters): Made of pure ectoplasm, Slimer is classified as a focused, non-terminal repeating phantasm, or a Class 5 full roaming vapor (and a real nasty one, at that). After the Ghostbusters stop him from haunting the Sedgewick Hotel, he became kind of a pet and a mascot, and became a more developed character in the Animated Series. Dan Ackroyd has referred to Slimer as \u201dThe Ghost of John Belushi.\""
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 32,
+    "fields": {
+        "name": "Space Ghost",
+        "description": "(Space Ghost and Dino Boy/Space Ghost Coast to Coast): One of the greatest talk show hosts of all time, often accompanied by his nemeses/sidekicks Zorak, Moltar and Brak. Designed by the great Alex Toth, Space Ghost started out as superhero who fought villains and faced off against The Council of Doom (in space. Natch.), before signing on to host his own show on the Cartoon Network."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 33,
+    "fields": {
+        "name": "Strigoi",
+        "description": "(Romanian folklore): Troubled souls risen from the grave, a tradition dating back through Indo-European Dacian/Thracian mythology. Strigoi are often seen as being similar to vampires, immortal undead, but also manifest as evil spirits who haunt the living, often their living family members."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 34,
+    "fields": {
+        "name": "Candyman",
+        "description": "(Candyman): In life, the Candyman was the son of a slave who became a well-known artist; when he fell in love with a white woman, an angry mob cut off his hand, replacing it with a hook, smeared him with honey, and watched as he was stung to death by bees. According to the film\u2019s urban legend, he can be summoned by saying his name five times in a mirror, but since we\u2019re talking about Tony Todd with a hook-hand, it\u2019s not recommended."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 35,
+    "fields": {
+        "name": "The Crypt Keeper",
+        "description": "(Tales from the Crypt): In the 50s, the Crypt Keeper started out as the narrator of EC\u2019s horror comic anthology series Tales from the Crypt, until the Comics Code quickly brought about its untimely death. In 1989, however, the character was revived as a cackling animated corpse in order to host the HBO series of the same name. With lines like, \u201cHello, boils and ghouls!\u201d, the Crypt Keeper\u2019s moldering puns were usually the most deadly part of the show."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 36,
+    "fields": {
+        "name": "Headless Horseman",
+        "description": "(\u201cThe Legend of Sleepy Hollow\u201d): In Irving\u2019s classic short story, the Horseman is the ghost of a Hessian soldier decapitated by a cannonball during the American Revolution. While it is suggested in the story that the \u201cspirit\u201d who chases schoolteacher Ichabod Crane might really be Crane\u2019s romantic rival impersonating the ghost to scare him off, the legend of the Headless Horseman remains potent (and if you haven\u2019t seen the Disney adaptation or Christopher Walken\u2019s take on the character in Sleepy Hollow, then you are missing out)."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 37,
+    "fields": {
+        "name": "Tom\u00e1s",
+        "description": "(El Orfanato/The Orphanage): The protagonist of Spanish suspense/horror film The Orphanage first encounters Tom\u00e1s as the imaginary friend of her adopted son, Sim\u00f3n\u2014but as events turn sinister, he becomes more of a definite, if ghostly, presence. Depicted through most of the film as a small boy wearing a disturbing mask stitched together out of sackcloth, Tom\u00e1s is simultaneously horrifying and heartbreaking."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 38,
+    "fields": {
+        "name": "Vetala",
+        "description": "(Hindu folklore): Spirits who tend to haunt places of burial and charnel grounds; trapped between life and the afterlife, they can take possession of corpses and cause all kinds of crazy trouble for the living."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 39,
+    "fields": {
+        "name": "Wiederg\u00e4nger",
+        "description": "(German folklore): Category of undead spirits who would trouble or torment the living in different ways; some types would jump on the backs of their victims and grow heavier and heavier until they broke down, exhausted or dead. Another variation is the headless rider, which made its way from European ghost story to American literature thanks to Washington Irving."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 40,
+    "fields": {
+        "name": "Xunantunich",
+        "description": "(Real life/Archaeology): The name of this ancient Mayan archaeological site in Belize comes from Mayan words for \u201cStone Woman,\u201d after the ghostly figure who has been seen haunting the site since 1892. Dressed all in white with fiery, red glowing eyes, the woman reportedly appears at the site, ascends the steps of the ceremonial pyramid and disappears into a stone wall."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 41,
+    "fields": {
+        "name": "Y\u016brei",
+        "description": "(Japanese folklore): Used as a general term; there are also more specific types of ghosts, like the Onry\u014d (vengeful spirits who return from purgatory), Gory\u014d (aristocratic ghosts, often vengeful martyrs), or Zashiki-warashi (mischievous ghost children)."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 42,
+    "fields": {
+        "name": "Zhong Kui",
+        "description": "(Chinese mythology): By some accounts, Zhong Kui is the ghost (Gu\u012d) of a man who failed his civil service exams and committed suicide, he is a vanquisher of ghosts and evil spirits: a ghost who hunts other ghosts."
+    }
+},
+{
+    "model": "phantomname.ghostname",
+    "pk": 43,
+    "fields": {
+        "name": "Zuul",
+        "description": "(Ghostbusters): The Gatekeeper of Gozer; minion of The Destructor. Lovely singing voice, but with an unfortunate tendency to manifest as a Terror Dog and/or take over your fridge."
+    }
+}
+]

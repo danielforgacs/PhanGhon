@@ -1,0 +1,12 @@
+{% extends 'phantomname/layout.html' %}
+
+{% block body %}
+<div>
+	<form action="" method="POST">
+		{% csrf_token %}
+		<p><input type="text" name="firstname" placeholder="first name" required></p>
+		<p><input type="text" name="lastname" placeholder="last name" required></p>
+		<p><input type="submit" name=""></p>
+	</form>
+</div>
+{% endblock %}
