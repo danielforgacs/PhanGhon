@@ -104,4 +104,25 @@ def test_new_user_can_choose_phantom_name(users, ghostnames, client):
     html = response.content.decode()
     pattern = r'..::firstname::.. .*\d{4} ..::lastname::..'
     found = re.findall(pattern, html)
-    assert len(found) == 4
+    assert len(found) == 3
+
+    url = urls.reverse('save_choice')
+
+    # We don't know which 3 ghost names random.choice
+    # chooses in the view. This makes sure at least
+    # one is selected.
+    try:
+        response = client.get(url, {'choice': 0}, follow=True)
+    except:
+        try:
+            response = client.get(url, {'choice': 1}, follow=True)
+        except:
+            try:
+                response = client.get(url, {'choice': 2}, follow=True)
+            except:
+                raise
+
+    html = response.content.decode()
+    pattern = r'..::firstname::.. .*\d{4} ..::lastname::..'
+    found = re.findall(pattern, html)
+    assert len(found) == 1
