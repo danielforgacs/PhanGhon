@@ -3,6 +3,12 @@
 {% block body %}
 	<h3>Register</h3>
 
+	{% if error %}
+		<div>
+			<strong>{{ error }}</strong>
+		</div>
+	{% endif %}
+
 	{% if is_open %}
 		<form action="" method="POST">
 			{% csrf_token %}

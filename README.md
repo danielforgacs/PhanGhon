@@ -37,6 +37,12 @@ on this project.
 10 hours of work. At that point the product works,
 needs testing.
 
+- I set indentation to 4 spaces in the .pylintrc  
+specified in the brief. I also turned off docstring    
+messages, I would say the standard Django view,  
+model, urls, etc... modules or few lines classes
+need documentation.
+
 
 ## ToDo:
 

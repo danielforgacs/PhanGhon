@@ -2,11 +2,11 @@ clean:
 	@git clean -xdf -e .venv
 
 migrate:
-	@cd PhanGon && \
+	@cd PhanGhon && \
 		python manage.py migrate
 
 dumpdb:
-	@cd PhanGon && \
+	@cd PhanGhon && \
 		python manage.py dumpdata \
 		phantomname \
 		--indent 4 \
@@ -14,16 +14,15 @@ dumpdb:
 		-o phantomname/fixtures/phantomname.json
 
 loaddata:
-	- @rm PhanGon/db.sqlite3
-	@python PhanGon/manage.py migrate
-	@python PhanGon/manage.py loaddata phantomname
+	@python PhanGhon/manage.py migrate
+	@python PhanGhon/manage.py loaddata phantomname
 
 
 pylint:
-	@find PhanGon/phantomname/ -name '*.py' \
+	@find PhanGhon/phantomname/ -name '*.py' \
 		! -name '__init__.py' \
 		! -path '**/migrations/**' \
 		| xargs pylint
 
 test:
-	@pytest PhanGon
+	@pytest PhanGhon
