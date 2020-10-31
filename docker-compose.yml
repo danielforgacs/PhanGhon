@@ -7,19 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile.PhanGhon
     image: phanghon
-
-
-# version: "3.7"
-
-# services:
-
-#   youtube-dl:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile.youtube-download
-#     image: youtube-download
-#     volumes:
-#       - ./.download/:/home/.download/
-#     environment:
-#       - PLAYLIST_ID
-
+    env_file: .env
+    ports:
+      - 8000:8000
+    command: ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

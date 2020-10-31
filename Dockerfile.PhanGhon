@@ -13,5 +13,3 @@ COPY .env .
 RUN pipenv install --system
 
 EXPOSE 8000
-
-# RUN apt install pipenv3
