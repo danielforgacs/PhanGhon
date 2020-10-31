@@ -20,7 +20,7 @@
 {% for ghostname in ghostnames %}
 	<div>
 		{% if ghostname.phantomname %}
-			<strong>{{ ghostname.phantomname.user.first_name }} {{ ghostname.name }} {{ ghostname.phantomname.user.last_name }}</strong>
+			<strong class="bg-grey">{{ ghostname.phantomname.user.first_name }} {{ ghostname.name }} {{ ghostname.phantomname.user.last_name }}</strong>
 		{% else %}
 			{{ ghostname.name }}
 		{% endif %}
