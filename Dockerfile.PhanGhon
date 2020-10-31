@@ -8,9 +8,10 @@ WORKDIR /home
 COPY PhanGhon .
 COPY Pipfile .
 COPY Pipfile.lock .
-COPY .env .
+# COPY .env .
 
 RUN pipenv install --system
+# RUN pipenv install gunicorn
 
 EXPOSE 8000
 
@@ -19,3 +20,5 @@ ENV GOOGLE_CLIENT_SECRET=_2p1rKvxyMlDDuG1v3tCIm8Z
 
 RUN python3 manage.py migrate
 RUN python3 manage.py loaddata phantomname
+
+RUN pip3 install gunicorn

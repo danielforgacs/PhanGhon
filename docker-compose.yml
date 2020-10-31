@@ -9,5 +9,5 @@ services:
     env_file: .env
     ports:
       - 8000:8000
-    command: ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+    command: ["gunicorn", "siteconfig.wsgi"]
     image: phanghon

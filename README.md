@@ -60,7 +60,8 @@ need documentation.
 - more testing, QA
 - CI/CD
 
-## Improvement:
+## Possible Improvement:
 
 - performance test queries
 - the secrets should be stored better
+- class based views
