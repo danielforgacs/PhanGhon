@@ -14,11 +14,19 @@
         <!-- <h3>logged in as: <strong>{{ request.user }}</strong></h3> -->
         <!-- <p>first_name: {{ request.user.first_name }}</p> -->
         <!-- <p>last_name: {{ request.user.last_name }}</p> -->
-        <a href="{% url 'logout' %}">log out</a>
+        <div>
+            <a href="{% url 'logout' %}">log out</a>
+        </div>
     {% else %}
-        <a href="{% url 'login' %}">log in</a>
-        <a href="accounts/google/login/?process=login">Sign In with Google</a>
-        <a href="{% url 'register' %}">register</a>
+        <div>
+            <a href="{% url 'login' %}">log in</a>
+        </div>
+        <div>
+            <a href="accounts/google/login/?process=login">Sign In with Google</a>
+        </div>
+        <div>
+            <a href="{% url 'register' %}">register</a>
+        </div>
     {% endif %}
     </div>
 
