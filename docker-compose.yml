@@ -1,3 +1,25 @@
 version: "3.7"
 
 services:
+
+  phanghon:
+    build:
+      context: .
+      dockerfile: Dockerfile.PhanGhon
+    image: phanghon
+
+
+# version: "3.7"
+
+# services:
+
+#   youtube-dl:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile.youtube-download
+#     image: youtube-download
+#     volumes:
+#       - ./.download/:/home/.download/
+#     environment:
+#       - PLAYLIST_ID
+
