@@ -5,12 +5,12 @@ name = "pypi"
 
 [packages]
 Django = "==3.1.2"
+django-allauth = "==0.43.0"
 
 [dev-packages]
 pylint = "==2.6.0"
 pytest = "==6.1.2"
 pytest-django = "==4.0.0"
-
 
 [requires]
 python_version = "3.8"

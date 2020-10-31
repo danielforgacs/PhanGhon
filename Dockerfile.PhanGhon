@@ -1,0 +1,25 @@
+FROM ubuntu:20.04
+
+RUN apt update
+RUN apt install -y python3.8 pipenv
+
+WORKDIR /home
+
+COPY PhanGhon .
+COPY Pipfile .
+COPY Pipfile.lock .
+# COPY .env .
+
+RUN pipenv install --system
+# RUN pipenv install gunicorn
+
+EXPOSE 8000
+
+ENV GOOGLE_CLIENT_ID=581264794745-av8ai97f637op78a8v52n3n8qbtcq72u.apps.googleusercontent.com
+ENV GOOGLE_CLIENT_SECRET=_2p1rKvxyMlDDuG1v3tCIm8Z
+
+RUN python3 manage.py migrate
+RUN python3 manage.py loaddata phantomname
+RUN python3 manage.py collectstatic
+
+RUN pip3 install gunicorn

@@ -51,7 +51,7 @@ def register(request):
                 username=username,
                 password=password,
             )
-            auth.login(request, user)
+            auth.login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             response = shortcuts.redirect(to=index)
         else:
             context['error'] = 'Passwords don`t match'
@@ -89,7 +89,7 @@ def login(request):
             password=password,
         )
         if user:
-            auth.login(request, user)
+            auth.login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             response = shortcuts.redirect(to='index')
         else:
             response = shortcuts.redirect(to='register')

@@ -1,3 +1,13 @@
 version: "3.7"
 
 services:
+
+  phanghon:
+    build:
+      context: .
+      dockerfile: Dockerfile.PhanGhon
+    env_file: .env
+    ports:
+      - 8000:8000
+    command: ["gunicorn", "-b", "0.0.0.0:8000", "siteconfig.wsgi"]
+    image: phanghon
