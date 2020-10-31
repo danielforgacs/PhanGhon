@@ -17,6 +17,11 @@
         <div>
             <a href="{% url 'logout' %}">log out</a>
         </div>
+        {% if request.user.is_superuser %}
+        <div>
+            <a href="{% url 'admin:index' %}">Admin Site</a>
+        </div>
+        {% endif %}
     {% else %}
         <div>
             <a href="{% url 'login' %}">log in</a>
