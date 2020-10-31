@@ -1,6 +1,6 @@
 {% extends 'phantomname/layout.html' %}
 
-{% block body %}
+{% block content %}
 	{% for ghostname in choices %}
 		<p>
 			<a href="{% url 'save_choice' %}?choice={{ ghostname.id }}">
