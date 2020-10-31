@@ -26,3 +26,12 @@ pylint:
 
 test:
 	@pytest PhanGhon
+
+build:
+	@time docker-compose build --no-cache --force-rm --pull
+
+up:
+	@docker-compose up
+
+upd:
+	@docker-compose up -d

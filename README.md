@@ -1,12 +1,14 @@
 ## Phantom Ghost Name Picker
 
+**for usage see Makefile targets.**
+
 
 ### The project uses pipenv
 
 ```
 $ pipenv shell
 
-$ pipenv install
+$ pipenv install [--dev]
 ```
 
 ### Run the project
@@ -19,6 +21,14 @@ $ make migrate
 
 # load fixtues: ghostname table, a few users
 $ make loaddata
+```
+
+### Run the project - in a container
+
+```
+$ make build
+
+$ make up
 ```
 
 ## Notes:
@@ -47,7 +57,10 @@ need documentation.
 ## ToDo:
 
 - sphinx docs
-- more testing
-- OAuth with google
-- docker & compose setup
-- deployment
+- more testing, QA
+- CI/CD
+
+## Improvement:
+
+- performance test queries
+- the secrets should be stored better

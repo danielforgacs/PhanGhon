@@ -13,3 +13,9 @@ COPY .env .
 RUN pipenv install --system
 
 EXPOSE 8000
+
+ENV GOOGLE_CLIENT_ID=581264794745-av8ai97f637op78a8v52n3n8qbtcq72u.apps.googleusercontent.com
+ENV GOOGLE_CLIENT_SECRET=_2p1rKvxyMlDDuG1v3tCIm8Z
+
+RUN python3 manage.py migrate
+RUN python3 manage.py loaddata phantomname
