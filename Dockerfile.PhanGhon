@@ -20,5 +20,6 @@ ENV GOOGLE_CLIENT_SECRET=_2p1rKvxyMlDDuG1v3tCIm8Z
 
 RUN python3 manage.py migrate
 RUN python3 manage.py loaddata phantomname
+RUN python3 manage.py collectstatic
 
 RUN pip3 install gunicorn
