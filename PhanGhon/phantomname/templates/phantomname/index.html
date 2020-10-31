@@ -5,12 +5,12 @@
 {% if user.is_authenticated %}
 	{% if user.has_phantomname %}
 		<div>
-			<a href="{% url 'choose_name' %}">Choose a New Phantom Name (named)</a>
+			<a href="{% url 'choose_name' %}">Choose a New Phantom Name</a>
 		</div>
 	{% else %}
 		<div>
 			{% if request.user.first_name %}
-				<a href="{% url 'choose_name' %}">Choose a Phantom Name (named)</a>
+				<a href="{% url 'choose_name' %}">Choose a Phantom Name</a>
 			{% else %}
 				<a href="{% url 'get_name' %}">Choose a Phantom Name</a>
 			{% endif %}
