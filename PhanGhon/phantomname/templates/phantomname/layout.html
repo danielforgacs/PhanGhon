@@ -37,9 +37,12 @@
                 <a href="{% url 'register' %}">register</a>
             </div>
         {% endif %}
+
+        {% block nav %}
+        {% endblock %}
         </div>
 
-        {% block body %}
+        {% block content %}
         {% endblock %}
     </div>
 </body>

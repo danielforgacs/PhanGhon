@@ -1,7 +1,7 @@
 {% extends 'phantomname/layout.html' %}
 
-{% block body %}
-<div>
+{% block nav %}
+
 {% if user.is_authenticated %}
 	{% if user.has_phantomname %}
 		<div>
@@ -17,6 +17,9 @@
 		</div>
 	{% endif %}
 {% endif %}
+{% endblock %}
+
+{% block content %}
 {% for ghostname in ghostnames %}
 	<div>
 		{% if ghostname.phantomname %}
@@ -26,5 +29,4 @@
 		{% endif %}
 	</div>
 {% endfor %}
-</div>
 {% endblock %}
